@@ -1,0 +1,21 @@
+/* Global styles: hide vertical scrollbar and ensure root fills viewport */
+html, body, #root {
+  height: 100%;
+}
+body {
+  margin: 0;
+  overflow-y: hidden; /* never show vertical scrollbar */
+}
+
+/* Hide webkit scrollbars (redundant when overflow is hidden) */
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+/* Utility to ensure images don't cause overflow */
+.img-fit {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}

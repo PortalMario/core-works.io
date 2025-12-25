@@ -10,18 +10,18 @@ on:
 jobs:
   eslint:
     runs-on: ubuntu-latest
+
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v3
 
-      - name: Set up Node.js
-        uses: actions/setup-node@v4
+      - uses: actions/setup-node@v3
         with:
-          node-version: '20'
+          node-version: "20"
 
-      - name: Install dependencies
-        run: npm install
+      - uses: pnpm/action-setup@v2
+        with:
+          version: 8
 
-      - name 
-      - name: Run ESLint
-        run: npm lint
+      - run: pnpm install
+
+      - run: pnpm lint

@@ -11,7 +11,8 @@ import theme from "./theme";
 // TODO responsive design
 // TODO dont show scrollbar for whole page
 // TODO add links to buttons
-
+// TODO finish mail button
+// TODO Layout fixesq
 function App() {
   return (
     <ThemeProvider theme={theme}>

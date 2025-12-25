@@ -1,4 +1,4 @@
-import { Button, Card, CardContent, Grid } from "@mui/material";
+import { Button, Card, Grid } from "@mui/material";
 import CodeIcon from "@mui/icons-material/Code";
 import EmailIcon from "@mui/icons-material/Email";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";

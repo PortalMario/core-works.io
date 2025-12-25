@@ -32,13 +32,14 @@ const AboutCard = () => {
         }}
       >
         <CardContent>
-          <Typography variant="h6" gutterBottom>
-            Your Partner for Cutting-Edge Web Solutions
+          <Typography variant="h6" gutterBottom> {/* TODO format this nicer */}
+            Your Partner for IT-Infrastructure Solutions
           </Typography>
           <Typography variant="body1">
-            At Core Works, we specialize in delivering innovative web
-            development.
+            Linux | DevOps | Infrastructure as Code
           </Typography>
+          <Typography variant="body1">Felix Weigl</Typography>
+          <Typography variant="body1">IT-Fachinformatiker</Typography>
         </CardContent>
         <CardActions>
           <Button
@@ -46,6 +47,8 @@ const AboutCard = () => {
             color="primary"
             variant="contained"
             startIcon={<GitHubIcon />}
+            href="https://github.com/PortalMario"
+            target="_blank"
           >
             Learn More on Our Github
           </Button>

@@ -15,11 +15,12 @@ const LogoCard = () => {
     >
       <Card
         sx={{
-          height: "95%", // this needs to be solved betters
+          height: "100%",
           borderColor: "secondary.main",
           borderStyle: "solid",
           borderWidth: (theme) => theme.borders.width.thin,
           borderRadius: (theme) => theme.shape.borderRadius,
+          padding: (theme) => theme.paddings.small,
           boxShadow: "none",
           display: "flex",
           flexDirection: "column",

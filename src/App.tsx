@@ -9,9 +9,8 @@ import theme from "./theme";
 
 // TODO Dark Theme support
 // TODO responsive design
-// TODO content via md?
-// TODO general formating fixes
 // TODO dont show scrollbar for whole page
+// TODO add links to buttons
 
 function App() {
   return (
@@ -21,20 +20,20 @@ function App() {
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
-          minHeight: "100vh",
+          height: "100vh",
         }}
       >
         <Grid container sx={{ maxWidth: "70%" }}>
-          <Grid size={6}>
-            <LogoCard />
+          <Grid size={6} sx={{ maxHeight: "40vh" }}>
+            <LogoCard />           
           </Grid>
-          <Grid size={6}>
+          <Grid size={6} >
             <Stack spacing={1}>
               <AboutCard />
               <TechCard />
             </Stack>
           </Grid>
-          <Grid size={12} sx={{ maxHeight: "50%" }}>
+          <Grid size={12} sx={{ maxHeight: "30%" }}>
             <LinksCard />
           </Grid>
         </Grid>

@@ -1,8 +1,10 @@
-import { Button, Card, CardContent, Divider } from "@mui/material";
+import { Button, Card, CardContent, Grid } from "@mui/material";
 import CodeIcon from "@mui/icons-material/Code";
 import EmailIcon from "@mui/icons-material/Email";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import * as motion from "motion/react-client";
+
+// TODO render buttons dynamically
 
 const LinksCard = () => {
   return (
@@ -24,30 +26,31 @@ const LinksCard = () => {
           borderRadius: (theme) => theme.shape.borderRadius,
           boxShadow: "none",
           width: "100%",
-          height: "77%", // TODO make this better
+          height: "100%",
         }}
       >
-        <CardContent
-          sx={{
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-            flexDirection: "row",
-            padding: (theme) => theme.paddings.small,
-          }}
+        <Grid
+          container
+          sx={{ maxWidth: "70%", margin: "auto", height: "100%" }}
+          justifyContent="center"
+          alignItems="center"
         >
-          <Button variant="contained" endIcon={<CodeIcon />} size="small">
-            Checkout the Code
-          </Button>
-          <Divider orientation="vertical" flexItem sx={{ mx: 2 }} />
-          <Button variant="contained" endIcon={<EmailIcon />} size="small">
-            Write us a Mail
-          </Button>
-          <Divider orientation="vertical" flexItem sx={{ mx: 2 }} />
-          <Button variant="contained" endIcon={<LinkedInIcon />} size="small">
-            Connect on LinkedIn
-          </Button>
-        </CardContent>
+          <Grid size={4} sx={{ display: "flex", justifyContent: "center" }}>
+            <Button variant="contained" endIcon={<CodeIcon />} size="small">
+              Checkout the Code
+            </Button>
+          </Grid>
+          <Grid size={4} sx={{ display: "flex", justifyContent: "center" }}>
+            <Button variant="contained" endIcon={<EmailIcon />} size="small">
+              Write us a Mail
+            </Button>
+          </Grid>
+          <Grid size={4} sx={{ display: "flex", justifyContent: "center" }}>
+            <Button variant="contained" endIcon={<LinkedInIcon />} size="small">
+              Connect on LinkedIn
+            </Button>
+          </Grid>
+        </Grid>
       </Card>
     </motion.div>
   );

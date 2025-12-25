@@ -14,6 +14,7 @@ import { FaLinux } from "react-icons/fa";
 import OpenInNewIcon from "@mui/icons-material/OpenInNew";
 import { SiOpentofu } from "react-icons/si";
 import * as motion from "motion/react-client";
+import type { IconType } from "react-icons"
 
 const techItems = [
   {
@@ -40,7 +41,7 @@ const techItems = [
 
 const generateTechListItem = (item: {
   name: string;
-  icon: TSX.Element; // TODO fix type
+  icon: IconType;
   link: string;
 }) => {
   return (

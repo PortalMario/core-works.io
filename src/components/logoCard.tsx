@@ -10,7 +10,7 @@ const LogoCard = () => {
       style={{ height: "100%", display: "flex" }}
       transition={{
         duration: 0.4,
-        scale: { type: "tween", visualDuration: 0.4, bounce: 0.2, delay: 0.1},
+        scale: { type: "tween", visualDuration: 0.4, bounce: 0.2, delay: 0.1 },
       }}
     >
       <Card

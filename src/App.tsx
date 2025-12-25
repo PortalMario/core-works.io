@@ -2,18 +2,18 @@ import Grid from "@mui/material/Grid";
 import Stack from "@mui/material/Stack";
 import LogoCard from "./components/logoCard";
 import AboutCard from "./components/aboutCard";
-import ContactCard from "./components/contactCard";
+import TechCard from "./components/techCard";
 import LinksCard from "./components/linksCard";
 import { ThemeProvider, Box } from "@mui/material";
 import theme from "./theme";
 
 // TODO Dark Theme support
-// responsive design
-// TODO fix right size
+// TODO responsive design
 // TODO content via md?
 // TODO general formating fixes
+// TODO dont show scrollbar for whole page
 
-function App() {;
+function App() {
   return (
     <ThemeProvider theme={theme}>
       <Box
@@ -26,12 +26,12 @@ function App() {;
       >
         <Grid container sx={{ maxWidth: "70%" }}>
           <Grid size={6}>
-            <LogoCard/>
+            <LogoCard />
           </Grid>
           <Grid size={6}>
             <Stack spacing={1}>
               <AboutCard />
-              <ContactCard />
+              <TechCard />
             </Stack>
           </Grid>
           <Grid size={12} sx={{ maxHeight: "50%" }}>
